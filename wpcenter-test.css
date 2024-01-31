@@ -1,0 +1,134 @@
+#userDetailsPopup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    width: 40%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+#userDetailsContent {
+    font-family: 'Poppins', sans-serif;
+    color: #2a3f47;
+    line-height: 1.6;
+}
+
+#userDetailsContent p {
+    margin: 5px 0;
+}
+
+#closePopup {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #2a3f47;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+#closePopup:hover {
+    background-color: #3e5561;
+}
+
+.highlight-address, .highlight-company {
+    font-weight: bold;
+    color: #2a3f47;
+    background-color: #ecfbf7;
+	padding: 10px 0px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.highlight-address > strong, .highlight-company > strong {
+    color: inherit;
+}
+
+
+
+table {
+    width: 60%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    font-family: Poppins, sans-serif;
+    color: #2a3f47;
+    background-color: #ecfbf7;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+th {
+    background-color: #2a3f47;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+}
+
+tr:nth-child(even) {
+    background-color: #ecfbf7;
+}
+
+tr:hover {
+    cursor: pointer;
+}
+
+.user-row {
+    transition: all 0.3s ease;
+}
+
+
+.user-row:hover {
+    transform: scale(1.03);
+    background-color: #2a3f47;
+	color: #ecfbf7;
+}
+
+#loadingPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#loadingPopup img {
+    display: block;
+    margin: 0 auto;
+}
+
+#clearCacheButton {
+    padding: 10px 20px;
+    background-color: #2a3f47;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#clearCacheButton:hover {
+    background-color: #3e5561;
+}
